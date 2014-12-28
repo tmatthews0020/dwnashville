@@ -1,0 +1,68 @@
+@import "1-tools/-tools-index";
+
+
+$main-red-color: #9c1717;
+$main-yellow-color: #ffcc33;
+$main-darkgrey-color: #222222;
+$main-lightgrey-color:  #AAAAAA;
+
+
+@include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
+
+*{
+  font-family: Aller;
+}
+
+.grid-container{
+  @include outer-container;
+
+}
+
+.grid-system-inner-9{
+  text-align:center;
+  background-color: #b2ffff;
+  @include span-columns(9);
+}
+
+.grid-system-inner-3{
+  text-align:center;
+  background-color: #b2ffff;
+  @include span-columns(3);
+}
+
+.grid-inner{
+  @include span-columns(12);
+}
+
+.colors{
+  @include outer-container;
+  @include pad;
+  color: white;
+  padding: 2.5em;
+
+  div{
+    padding:1.0em;
+  }
+  .red{
+
+    @include span-columns(3);
+    background-color: $main-red-color;
+  }
+
+  .lightgrey{
+    @include span-columns(3);
+    background-color: $main-lightgrey-color;
+  }
+
+  .darkgrey{
+    @include span-columns(3);
+    background-color: $main-darkgrey-color;
+  }
+
+  .yellow{
+    @include span-columns(3);
+    background-color: $main-yellow-color;
+  }
+
+
+}

@@ -1,3 +1,5 @@
 @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
+
+@include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');

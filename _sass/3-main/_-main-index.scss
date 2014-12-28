@@ -60,7 +60,7 @@ $flex-box-top-colors:
   opacity: .4;
   height: 3em;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .flex-box .flex-title {
@@ -79,4 +79,14 @@ $flex-box-top-colors:
 
 .flex-box-big {
   @include flex(1 1 40em);
+}
+
+.image {
+
+  img{
+    display:block;
+    opacity:1;
+    height: inherit;
+    width:100%;
+  }
 }
