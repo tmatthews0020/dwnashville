@@ -3,3 +3,17 @@
 @import 'neat/neat';
 
 @include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
+
+$column: 75px;
+$gutter: 15px;
+$grid-columns: 12;
+$max-width: em(1088);
+
+
+$mobile: new-breakpoint(max-width 320px 4);
+$tablet: new-breakpoint(max-width 720px 8);
+
+
+body{
+
+}

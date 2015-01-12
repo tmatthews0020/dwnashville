@@ -8,10 +8,10 @@ $main-lightgrey-color:  #AAAAAA;
 
 
 @include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
-
-*{
-  font-family: Aller;
-}
+//
+// *{
+//   font-family: Aller;
+// }
 
 .grid-container{
   @include outer-container;
