@@ -7,6 +7,7 @@
 
 
   h1{
+    color: #444444;
     font-family: Aller;
     text-align:center;
     margin-bottom: 1.5em;
@@ -35,5 +36,23 @@
     }
 
 
+  }
+}
+
+
+.footer{
+  text-align:center;
+  .jobtracker{
+    a{
+    color: #444444;
+
+    &:visited{
+    color: #444444;
+    }
+
+    &:hover{
+    color: #444444;
+    }
+  }
   }
 }

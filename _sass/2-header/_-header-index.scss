@@ -4,6 +4,18 @@
 
 @include font-face(Chunkfive, '../assets/fonts/ChunkFive/chunkfive.ttf');
 
+
+.bgimg{
+  background-image: url("../assets/images/background.jpg") ;
+  background-repeat:no-repeat;
+  // background-size:contain;
+  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* NAVIGATION BAR */
 
 
@@ -11,39 +23,38 @@
 
 .navi{
 
+    padding-top:1.5em;
     @include outer-container(100%);
     max-height: 120px;
-    border-bottom: solid;
-    border-color: #AAAAAA;
+
     @include media($tablet){
       max-height:200px;
     }
 
 
-.logo{
-  margin-top:.5em;
-  @include span-columns(3);
+  .logo{
+    margin-top:.5em;
+    @include span-columns(3);
 
 
 
-  @include media($tablet){
-    @include span-columns(8);
-
-  }
-
-  img{
-    @include pad(default);
-    @include row();
-    height:90px;
-    width:145px;
-    margin: auto;
     @include media($tablet){
-      height:75px;
-      width:100px;
+      @include span-columns(8);
+
+    }
+
+    img{
+      @include pad(default);
+      @include row();
+      height:90px;
+      width:145px;
+      margin: auto;
+      @include media($tablet){
+        height:75px;
+        width:120px;
+      }
     }
   }
-
-
 }
 
   .navi-links{
@@ -53,41 +64,56 @@
     @include pad();
     margin-top:1.0em;
 
-    @include media($tablet){
-      @include span-columns(8);
+      @include media($tablet){
+        @include span-columns(8);
 
-      }
+        }
+
+        a:hover{
+          text-decoration:none;
+        }
 
       ul{
+        text-align:right;
         display:block;
-        text-align:center;
+
+
+        @include media($tablet){
+          @include clearfix();
+          text-align:center;
+        }
       }
 
 
+    .active{
+      border-bottom:solid;
+      border-size: 1.5em;
+      border-color: rgba(255,0,0,0.5);
+    }
+
     li{
-      font-family: Aller;
-      color: #666666;
-      font-size:16px;
+      font-family: ChunkFive;
+      color: white;
+      font-size:1.3em;
       display:inline;
       padding: .7em;
 
+      &:hover{
+        text-decoration: none;
+      }
+
     }
 
-  }
 }
 
 /* NAVIGATION BAR END */
 /* HEADER BEGIN */
 .header{
 
-  background: url("../assets/images/dwnashville.png") center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
   min-width:100%;
   height: 750px;
-  padding-top:15%;
+  padding-top:11%;
   position:relative;
 
   @include media($tablet){
@@ -112,17 +138,25 @@
       height: 75px;
     }
 
+    &:hover{
+      background-color: rgba(255,0,0, 0.7);
+    }
+
   }
 
   .sinks{
     height:100px;
     display:inline-block;
     padding: .4em;
-  background-color: rgba(255,255,0,0.5);
-  @include media($tablet){
-    height: 75px;
-  }
+    background-color: rgba(255,255,0,0.5);
 
+    @include media($tablet){
+    height: 75px;
+    }
+
+    &:hover{
+      background-color: rgba(255,255,0,0.7);
+    }
   }
 
   .amps{
@@ -142,22 +176,38 @@
     }
   }
 
+
+  .circle {
+    border-radius: 50%;
+    height:32px;
+    width:32px;
+    margin: 1.5em auto;
+    background: rgba(255,0,0,0.5);
+
+  }
+
+  .info{
+    font-family: Aller;
+    position:absolute;
+    bottom:0;
+    margin: 50px auto;
+    border-radius: .5em;
+    height:75px;
+    width:350px;
+    color: white;
+    background: rgba(15,15,15,0.7);
+    p{
+      padding: 1.0em;
+    }
+  }
+
 }
 
 /* HEADER END */
 
 
 /* INFORMATION BEGIN */
-// <div class="information">
-//   <span class="phone">
-//     <a href="tel:888-615-8677">
-//       888-615-8677
-//     </a>
-//   </span>
-//   <span class="social">
-//     <img src="../assets/images/fb.png">
-//   </span>
-// </div>
+
 
 .information-wrapper{
 
@@ -170,7 +220,7 @@
     text-align:center;
 
     a{
-      font-family: Aller;
+      font-family: Helvetica;
       color:white;
       &:visited{
         color:white;
