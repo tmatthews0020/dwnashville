@@ -1,6 +1,11 @@
  #
 #baseurl: " " # the subpath of your site, e.g. /blog/
-url: "waltz1.com" # the base hostname & protocol for your site
+url: "http://www.dwnashville.com" # the base hostname & protocol for your site
+site-url: "http://www.dwnashville.com"
+gems:
+  - jekyll
+  - jekyll-sitemap
+
 
 # Build settings
 markdown: kramdown

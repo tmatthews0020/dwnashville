@@ -1,0 +1,46 @@
+@import "1-tools/-tools-index";
+
+
+iframe{
+  @include fill_parent();
+  height: 500px;
+  @include pad();
+}
+
+
+.contact-info{
+
+
+
+    div{
+      text-align:center;
+      @include span-columns(6);
+
+      @include media($mobile){
+        @include span_columns(4);
+      }
+
+
+
+      i{
+        @include pad();
+        color: #990000;
+
+      }
+    }
+
+
+
+}
+
+h1{
+
+  text-align:center;
+
+}
+
+
+form{
+
+    @include pad();
+}

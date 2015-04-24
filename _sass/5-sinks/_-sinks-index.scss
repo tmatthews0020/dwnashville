@@ -1,0 +1,117 @@
+@import "1-tools/-tools-index";
+
+.sinks-page{
+  @include pad();
+  font-family: Aller;
+  color: 191919;
+  text-align: center;
+
+  h1{
+
+  }
+
+}
+
+a{
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+
+
+.sinks-main-images{
+  @include outer-container();
+  @include pad();
+  // @include span-columns(8.9);
+
+
+  .sinks-fill-width-container{
+    height:500px;
+
+
+
+      .sinks-fill-width{
+        position: relative;
+
+        height:500px;
+        @include pad();
+        @include span-columns(12);
+
+        .sinks-images-info{
+          text-align:center;
+          @include pad();
+          height: 450px;
+
+
+          h1{
+            position: absolute;
+            bottom: 0;
+            @include pad();
+            font-family: ChunkFive;
+            font-size: 3.5em;
+            color:white;
+            background-color: rgba(49,0,0,.6);
+
+
+
+          }
+
+          p{
+
+            font-family: ChunkFive;
+            font-size: 2.5em;
+            color:white;
+          }
+
+        }
+
+      }
+  }
+
+
+
+
+
+  .double{
+    height: 500px;
+    position:relative;
+
+
+    .half{
+      @include span-columns(6);
+      height: 500px;
+
+      .sinks-images-info{
+        position: relative;
+        text-align:center;
+        @include pad();
+        height: 450px;
+
+
+        h1{
+          background-color: rgba(49,0,0,.6);
+          position: absolute;
+          bottom: 0;
+          font-family: ChunkFive;
+          font-size: 3.5em;
+          color:white;
+          @include pad();
+
+
+        }
+      }
+
+
+      @include media($mobile){
+          @include span-columns(4);
+          overflow: none;
+      }
+    }
+  }
+
+  img{
+    padding-bottom: 2.5em;
+
+  }
+}

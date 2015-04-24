@@ -2,7 +2,9 @@
 @import '1-tools/-tools-index';
 
 
-@include font-face(Chunkfive, '../assets/fonts/ChunkFive/chunkfive.ttf');
+.container{
+  @include outer-container();
+}
 
 
 .bgimg{
@@ -23,6 +25,7 @@
 
 .navi{
 
+    margin-bottom: 3.5em;
     padding-top:1.5em;
     @include outer-container(100%);
     max-height: 120px;
@@ -57,6 +60,59 @@
   }
 }
 
+.page-navi-links{
+
+  @include span-columns(7);
+  @include row();
+  @include pad();
+
+  margin-top:1.0em;
+
+
+    @include media($tablet){
+      @include span-columns(8);
+
+      }
+
+      a:hover{
+        text-decoration:none;
+      }
+
+    ul{
+      text-align:right;
+      display:block;
+
+      @include media($tablet){
+        @include clearfix();
+        text-align:center;
+        font-size: .8em;
+      }
+    }
+
+
+
+
+  .active{
+    border-bottom:solid;
+    border-size: 1.5em;
+    border-color: rgba(255,0,0,0.5);
+  }
+
+  li{
+    font-family: ChunkFive;
+    color: #343434;
+    font-size:1.3em;
+    display:inline;
+    padding: .7em;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
+}
+
   .navi-links{
 
     @include span-columns(7);
@@ -77,12 +133,14 @@
         text-align:right;
         display:block;
 
-
         @include media($tablet){
           @include clearfix();
           text-align:center;
+          font-size: .8em;
         }
       }
+
+
 
 
     .active{
@@ -132,7 +190,7 @@
     height:100px;
     display:inline-block;
     padding: .4em;
-    background-color: rgba(255,0,0,0.5);
+    background-color: rgba(89,0,0,0.5);
 
     @include media($tablet){
       height: 75px;
@@ -148,7 +206,7 @@
     height:100px;
     display:inline-block;
     padding: .4em;
-    background-color: rgba(255,255,0,0.5);
+    background-color: rgba(229,184,0,0.5);
 
     @include media($tablet){
     height: 75px;
@@ -165,7 +223,7 @@
     padding: .2em;
   }
   h1{
-
+    font-weight: normal;
     font-family: Chunkfive;
     font-size: 75px;
     color:white;
@@ -187,16 +245,18 @@
   }
 
   .info{
-    font-family: Aller;
+
     position:absolute;
     bottom:0;
     margin: 50px auto;
     border-radius: .5em;
     height:75px;
     width:350px;
-    color: white;
+
     background: rgba(15,15,15,0.7);
     p{
+      color: $grey-color-light;
+      font-family: Aller;
       padding: 1.0em;
     }
   }
@@ -213,7 +273,7 @@
 
   height:40px;
   min-width: 100%;
-  background-color: rgba(255,0,0,0.5);
+  background-color: rgba(89,0,0,0.5);
   position:absolute;
   bottom: 0;
   .information{
@@ -236,7 +296,7 @@
   .phone{
     padding-top: 0.4em;
     height: 40px;
-    background-color:red;
+    background-color:#590000;
     @include shift(2);
     @include span-columns(2);
 
@@ -250,7 +310,7 @@
   .social{
     padding-top: 0.3em;
     height: 40px;
-    background-color:red;
+    background-color:#590000;
     @include shift(1);
     @include span-columns(2);
 

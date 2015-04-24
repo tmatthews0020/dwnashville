@@ -2,6 +2,9 @@
 @import 'base/base';
 @import 'neat/neat';
 
+
+@include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
+@include font-face(Chunkfive, '/assets/fonts/ChunkFive/chunkfive.ttf');
 @include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
 
 $column: 75px;
@@ -10,10 +13,41 @@ $grid-columns: 12;
 $max-width: em(1088);
 
 
-$mobile: new-breakpoint(max-width 320px 4);
+$mobile: new-breakpoint(max-width 520px 4);
 $tablet: new-breakpoint(max-width 720px 8);
 
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 35%);
+
+ul{
+  margin: 0;
+}
+
+footer{
+  display:block;
+
+  text-align:center;
+}
 
 body{
+  width:100%;
 
+
+}
+
+button{
+  height: 50px;
+  width: 100px;
+}
+
+
+h1{
+  font-family: ChunkFive;
+  color: $grey-color-dark;
+}
+
+p{
+  color: $grey-color-dark;
+  font-family: Aller;
 }

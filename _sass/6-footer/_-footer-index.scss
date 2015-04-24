@@ -1,0 +1,58 @@
+@import "1-tools/-tools-index";
+
+
+.footer{
+  margin-top: 75px;
+  padding-top: 50px;
+  @include outer-container(100%);
+
+  background-color:#4c0000;
+  font-family: Aller;
+  color: white;
+  text-align:center;
+
+
+
+  .design{
+    @include span-columns(6);
+    @include pad();
+
+      p{
+        color: $grey-color-light;
+        text-align: center;
+      }
+
+      a{
+        text-decoration: none;
+        &:hover{
+          color:white;
+        }
+        &:visited{
+          color:white;
+        }
+      }
+
+      @include media($mobile){
+        @include fill_parent();
+      }
+
+  }
+
+
+  .copyright{
+    @include pad();
+
+    @include span-columns(6);
+
+    p{
+      color: $grey-color-light;      
+    }
+
+    @include media($mobile){
+      @include fill_parent();
+    }
+
+  }
+
+
+}
