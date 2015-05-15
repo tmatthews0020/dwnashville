@@ -3,6 +3,7 @@
 
 
 .container{
+  @include pad();
   @include outer-container();
 }
 
