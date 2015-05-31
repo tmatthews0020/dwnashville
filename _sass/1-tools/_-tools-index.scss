@@ -3,9 +3,9 @@
 @import 'neat/neat';
 
 
-@include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
-@include font-face(Chunkfive, '/assets/fonts/ChunkFive/chunkfive.ttf');
-@include font-face(Aller, '../assets/fonts/Aller_Rg.ttf');
+@include font-face(Aller, '../assets/fonts/Aller_Rg');
+@include font-face(Chunkfive, '/assets/fonts/ChunkFive/chunkfive');
+@include font-face(Aller, '../assets/fonts/Aller_Rg');
 
 $column: 75px;
 $gutter: 15px;

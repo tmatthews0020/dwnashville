@@ -20,17 +20,20 @@
       p{
         color: $grey-color-light;
         text-align: center;
+
+        a{
+          text-decoration: none;
+          color:white;
+          &:hover{
+            color:white;
+          }
+          &:visited{
+            color:white;
+          }
+        }
       }
 
-      a{
-        text-decoration: none;
-        &:hover{
-          color:white;
-        }
-        &:visited{
-          color:white;
-        }
-      }
+
 
       @include media($mobile){
         @include fill_parent();
@@ -45,7 +48,7 @@
     @include span-columns(6);
 
     p{
-      color: $grey-color-light;      
+      color: $grey-color-light;
     }
 
     @include media($mobile){

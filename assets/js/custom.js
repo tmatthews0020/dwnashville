@@ -1,6 +1,7 @@
-// $( document ).ready(function(){
-//   $('li').click(function(){
-//     $('li').removeClass("active");
-//     $(this).addClass("active");
-//   });
+//  $( document ).ready(function(){
+//
+//   $('#main').mouseenter(function(){
+//     $('.secondary').removeClass("none");
+//
+//     });
 // });

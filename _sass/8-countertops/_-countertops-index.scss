@@ -10,15 +10,21 @@
 
 
   #slider {
-    width: 400px;
-    height: 600px;
+    // width: 400px;
+    // height: 600px;
+    @include fill_parent();
+    max-width: 400px;
+    max-height: 600px;
     overflow:hidden;
     margin: 30px auto;
   }
 
   #slider > img {
-    width: 400px;
-    height:600px;
+    // width: 400px;
+    // height:600px;
+    @include fill_parent();
+    max-width: 400px;
+    max-height: 600px;
     float:left;
     display:none;
   }
@@ -162,4 +168,51 @@
 
 
   }
+}
+
+/* Solid Surface Page */
+
+
+.solid-surface-wrapper{
+  height:500px;
+  // @include background(url("", cover cover cover);
+   background: url(/assets/images/solid-surface/solid-surface-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include media($tablet){
+    height: 300px;
+  }
+
+}
+.solid-surface-info{
+
+
+    @include media($tablet){
+      *{
+        font-size: .8em !important;
+
+      }
+
+    }
+
+    h1{
+      padding-top: 5%;
+      font-size: 2em;
+    }
+
+    *{
+      @include pad();
+      font-size: 1.3em;
+      color: white;
+    }
+
+}
+
+.solid-surface-button{
+  color: red;
+
+  text-align: center;
 }
