@@ -4,9 +4,12 @@
 
 .container{
   padding-top: 200px;
+  h1{
+    text-align:center;
+  }
 
 
-  @include outer-container();
+  @include outer-container(90%);
 }
 
 
@@ -68,11 +71,11 @@
       @include pad(default);
       @include row();
       height:90px;
-      width:145px;
+      width:100px;
       margin: auto;
       @include media($tablet){
         height:75px;
-        width:120px;
+        width:110px;
       }
     }
   }
@@ -199,7 +202,7 @@
   // background-size: cover;
 
 
-  background: url(../assets/images/background.jpg) no-repeat center center fixed;
+  background: url(../assets/images/background2.png) no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -219,7 +222,7 @@
 
 .header-inner{
   text-align:center;
-
+  padding-top: 75px;
 
 
   .countertops{
@@ -272,6 +275,26 @@
   }
 
 
+.banner-link{
+
+  text-decoration:none;
+}
+
+.banner {
+
+    font-weight: normal;
+    font-family: Chunkfive;
+    font-size: 75px;
+    color:white;
+
+    @include media($tablet){
+      font-size: 40px;
+      // padding-bottom:1.0em;
+    }
+
+}
+
+
   .circle {
     border-radius: 50%;
     height:32px;
@@ -284,18 +307,29 @@
   .info{
 
     position:absolute;
-    bottom:0;
+    bottom:140px;
     margin: 50px auto;
     border-radius: .5em;
     height:75px;
     width:350px;
 
-    background: rgba(15,15,15,0.7);
-    p{
-      color: $grey-color-light;
-      font-family: Aller;
-      padding: 1.0em;
+    @include media($tablet){
+      bottom: 50px;
     }
+
+    a{
+      img{
+      @include media($tablet){
+        height: 75px;
+        width: 75px;
+      }
+    }
+  }
+
+
+
+    // background: rgba(15,15,15,0.7);
+
   }
 
 }

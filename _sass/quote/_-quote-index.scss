@@ -1,0 +1,28 @@
+@import '1-tools/-tools-index.scss';
+
+
+.two-column-wrapper{
+  @include pad();
+  text-align: center;
+
+  .column{
+    @include span-columns(6);
+
+    @include media($tablet){
+      @include fill_parent();
+
+    }
+
+  }
+}
+
+
+.quote-form{
+  @include fill_parent();
+
+}
+
+
+#formwrapper{
+  padding-bottom:5%;
+}

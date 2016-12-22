@@ -9,7 +9,7 @@ iframe{
 
 
 .contact-info{
-
+@include span-columns(12);
 
 
     div{
@@ -33,11 +33,21 @@ iframe{
 
 }
 
-h1{
 
-  text-align:center;
+.contact-form{
+  clear:both;
+  @include fill-parent();
+
+
+  h1{
+    padding-top: 94px;
+    text-align:center;
+
+  }
 
 }
+
+
 
 
 form{
