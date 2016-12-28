@@ -70,3 +70,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-sitemap
+  jekyll-watch
+
+BUNDLED WITH
+   1.13.1

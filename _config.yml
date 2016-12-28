@@ -6,7 +6,7 @@ gems:
   - jekyll
   - jekyll-sitemap
 
-
+host: 0.0.0.0
 # Build settings
 markdown: kramdown
 
