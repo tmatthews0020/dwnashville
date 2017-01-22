@@ -68,6 +68,7 @@
     a{
        background-color:white;
       font-family: ChunkFive;
+      font-size: 2em;
       color: #4c0000;
 
       &:hover{
@@ -78,6 +79,7 @@
   }
 
   padding-bottom: 7.5%;
+  margin-bottom: 5%;
 }
 
 
@@ -208,8 +210,11 @@
     *{
       @include pad();
       font-size: 1.3em;
-      color: white;
+      color: #232323;
+
     }
+
+    margin-bottom: 5%;
 
 }
 
