@@ -1,40 +1,36 @@
 @import "1-tools/-tools-index";
 
-
 iframe{
   @include fill_parent();
-  height: 500px;
-  @include pad();
+  height: 550px;
+  // @include pad();
 }
-
 
 .contact-info{
 @include span-columns(12);
-
-
+margin-top: 5%;
     div{
       text-align:center;
-      @include span-columns(6);
-
-      @include media($mobile){
-        @include span_columns(4);
-      }
-
-
-
+      @include span-columns(4);
       i{
         @include pad();
         color: #990000;
+      }
 
+      @include media($tablet){
+        @include span-columns(6)
+      }
+
+      @include media($mobile){
+        @include span_columns(12);
       }
     }
-
-
-
 }
 
-
-.contact-info{
+.mini-contact-info{
+  margin-top: 25px;
+  margin-bottom:25px;
+  @include pad();
   text-align:center;
 }
 
@@ -42,17 +38,11 @@ iframe{
   clear:both;
   @include fill-parent();
 
-
   h1{
     padding-top: 94px;
     text-align:center;
-
   }
-
 }
-
-
-
 
 form{
 

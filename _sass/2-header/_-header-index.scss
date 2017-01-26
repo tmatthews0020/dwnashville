@@ -1,7 +1,7 @@
 @import '1-tools/-tools-index';
 
 .container{
-  padding-top: 100px;
+  padding-top: px;
   h1{
     text-align:center;
   }
@@ -9,29 +9,12 @@
   @include outer-container(90%);
 }
 
-
-.bgimg{
-
-
-
-}
-
 /* NAVIGATION BAR */
-
-
-
-
-.secondary{
-
-}
 
 // secondary links are activated with Javascript
 .none{
   display: none !important;
 }
-
-
-
 
 .navi{
   left:0;
@@ -41,12 +24,8 @@
   position: fixed;
 
   background-color:white;
-
-
-
     // padding-top:1.5em;
     @include outer-container(100%);
-
 
     @include media($tablet){
       max-height:200px;

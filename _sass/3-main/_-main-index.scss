@@ -17,12 +17,9 @@
 }
 
 .partner-wrapper{
-
-  margin-bottom: 2.5em;
+  margin-top:3em;
+  margin-bottom: 3em;
   @include outer-container();
-
-
-
 
   .partner{
     padding-top: 2.5em;
@@ -30,36 +27,25 @@
     @include row();
     text-align:center;
 
-
-
     @include media($tablet){
       @include span-columns(3.9);
-
     }
 
     @include media($mobile){
       @include fill_parent;
     }
 
-
     img{
       height:115px;
       width: 250px;
 
-
       @include media($tablet){
-
         height: 100px;
         width: 170px;
       }
     }
-
-
   }
 }
-
-
-
 
 .partnerh1{
   color: #222222;

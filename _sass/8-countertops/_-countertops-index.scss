@@ -74,10 +74,29 @@
       &:hover{
         text-decoration: none;
       }
-
     }
   }
+  padding-bottom: 7.5%;
+  margin-bottom: 5%;
+}
 
+.solid-surface-secondary-links{
+  .link{
+
+    text-align:center;
+    // divide the amount of links there are by 12 and use that as your span-columns(there is 1 currently)
+    @include span-columns(12);
+    a{
+       background-color:white;
+      font-family: ChunkFive;
+      font-size: 2em;
+      color: #4c0000;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
   padding-bottom: 7.5%;
   margin-bottom: 5%;
 }
@@ -157,20 +176,10 @@
     font-size: 1.5em;
   }
 
-
     a{
       text-decoration: none;
       color: #4c0000;
-
-
-      li{
-
-
-      }
-
     }
-
-
   }
 }
 
@@ -179,8 +188,7 @@
 
 .solid-surface-wrapper{
   height:500px;
-  // @include background(url("", cover cover cover);
-   background: url(/assets/images/solid-surface/solid-surface-background.jpg) no-repeat center center fixed;
+  background: url(/assets/images/solid-surface/solid-surface-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
