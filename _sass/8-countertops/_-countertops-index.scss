@@ -6,28 +6,7 @@
 
 .countertops-page{
   @include outer-container();
-
-
-
-  #slider {
-    // width: 400px;
-    // height: 600px;
-    @include fill_parent();
-    max-width: 400px;
-    max-height: 600px;
-    overflow:hidden;
-    margin: 30px auto;
-  }
-
-  #slider > img {
-    // width: 400px;
-    // height:600px;
-    @include fill_parent();
-    max-width: 400px;
-    max-height: 600px;
-    float:left;
-    display:none;
-  }
+  margin-top: 5%;
 
   a{
     padding: 5px 10px;
@@ -36,18 +15,13 @@
     margin-top: 30px;
     font-family: ChunkFive;
     text-decoration:none;
-
   }
-
   .wrapper{
     width:600px;
     margin: 0px auto;
-
-
   }
 
   a.left {
-
     float: left;
     padding-left: 5%;
   }
@@ -104,10 +78,9 @@
 
 /* Edge Profiles Page Start */
 
-
 .edge_profiles{
   height: 1300px;
-  padding-top: 5%;
+  margin-top: 10%;
   padding-bottom: 2%;
 
   h1{
@@ -152,20 +125,14 @@
   }
 }
 
-
-
-
-
-
 /* Edge Profiles Page End */
-
 
 /* Stock Colors */
 
 .stock-colors-page{
   @include fill_parent();
 
-  padding-top: 5%;
+  margin-top: 5%;
   ul{
     @include pad();
   display: inline;
@@ -200,16 +167,11 @@
 
 }
 .solid-surface-info{
-
-
     @include media($tablet){
       *{
         font-size: .8em !important;
-
       }
-
     }
-
     h1{
       padding-top: 5%;
       font-size: 2em;
@@ -221,13 +183,10 @@
       color: #232323;
 
     }
-
     margin-bottom: 5%;
-
 }
 
 .solid-surface-button{
   color: red;
-
   text-align: center;
 }
