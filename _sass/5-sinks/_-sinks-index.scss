@@ -1,7 +1,7 @@
 @import "1-tools/-tools-index";
 
 .sinks-main-images{
-  @include outer-content(60%);
+  @include outer-container(60%);
   @include pad();
 
   a{
