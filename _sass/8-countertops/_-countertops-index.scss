@@ -152,20 +152,6 @@
 
 /* Solid Surface Page */
 
-
-.solid-surface-wrapper{
-  height:500px;
-  background: url(/assets/images/solid-surface/solid-surface-background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  @include media($tablet){
-    height: 300px;
-  }
-
-}
 .solid-surface-info{
     @include media($tablet){
       *{
@@ -184,6 +170,32 @@
 
     }
     margin-bottom: 5%;
+}
+
+.solid-surface-helpful-links{
+
+
+  h1{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 2em;
+  }
+
+}
+
+
+.solid-surface-wrapper{
+  height:500px;
+  background: url(/assets/images/solid-surface/solid-surface-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include media($tablet){
+    height: 300px;
+  }
+
 }
 
 .solid-surface-button{

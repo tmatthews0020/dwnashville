@@ -23,10 +23,19 @@ GEM
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.5.0)
+<<<<<<< HEAD
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+=======
+    libv8 (3.16.14.17-x86_64-linux)
+    liquid (2.6.2)
+    listen (2.8.5)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+>>>>>>> master
     mercenary (0.3.5)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
@@ -34,9 +43,24 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+<<<<<<< HEAD
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.12)
+=======
+    redcarpet (3.2.2)
+    ref (2.0.0)
+    safe_yaml (1.0.4)
+    sass (3.4.12)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
+    timers (4.0.1)
+      hitimes
+    toml (0.1.2)
+      parslet (~> 1.5.0)
+    yajl-ruby (1.2.1)
+>>>>>>> master
 
 PLATFORMS
   ruby
@@ -45,7 +69,14 @@ DEPENDENCIES
   jekyll
   jekyll-sitemap
   jekyll-watch
+<<<<<<< HEAD
   kramdown
 
 BUNDLED WITH
    1.14.6
+=======
+  therubyracer
+
+BUNDLED WITH
+   1.14.3
+>>>>>>> master
